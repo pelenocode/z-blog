@@ -1,26 +1,36 @@
 @import "tailwindcss";
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --brand: 0 84% 60%;        /* 红：HSL 变量 */
+  --brand-fg: 0 0% 100%;
+  --bg: 0 0% 100%;
+  --text: 222 47% 11%;
+  --muted: 215 16% 47%;
+  --border: 214 32% 91%;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+:root[data-theme="dark"], .dark {
+  --bg: 222 47% 6%;
+  --text: 210 40% 96%;
+  --muted: 215 20% 65%;
+  --border: 217 19% 27%;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+/* 示例：全局基础排版微调 */
+body { @apply bg-[hsl(var(--bg))] text-[hsl(var(--text))]; }
+a { @apply underline-offset-2 decoration-transparent hover:decoration-[hsl(var(--brand))]; }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-}
+
+
+
+
+
+
+
+
+
+
