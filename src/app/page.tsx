@@ -1,72 +1,65 @@
-import Image from "next/image";
+import Link from "next/link";
+
+const topics = [
+  "Java 后端",
+  "交易一致性",
+  "Redis 与并发",
+  "工程实践",
+];
 
 export default function Home() {
   return (
-    // <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-    //   <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-    //     <Image
-    //       className="dark:invert"
-    //       src="/next.svg"
-    //       alt="Next.js logo"
-    //       width={100}
-    //       height={20}
-    //       priority
-    //     />
-    //     <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-    //       <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-    //         To get started, edit the page.tsx file.
-    //       </h1>
-    //       <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-    //         Looking for a starting point or more instructions? Head over to{" "}
-    //         <a
-    //           href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-    //           className="font-medium text-zinc-950 dark:text-zinc-50"
-    //         >
-    //           Templates
-    //         </a>{" "}
-    //         or the{" "}
-    //         <a
-    //           href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-    //           className="font-medium text-zinc-950 dark:text-zinc-50"
-    //         >
-    //           Learning
-    //         </a>{" "}
-    //         center.
-    //       </p>
-    //     </div>
-    //     <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-    //       <a
-    //         className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-    //         href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-    //         target="_blank"
-    //         rel="noopener noreferrer"
-    //       >
-    //         <Image
-    //           className="dark:invert"
-    //           src="/vercel.svg"
-    //           alt="Vercel logomark"
-    //           width={16}
-    //           height={16}
-    //         />
-    //         Deploy Now
-    //       </a>
-    //       <a
-    //         className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-    //         href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-    //         target="_blank"
-    //         rel="noopener noreferrer"
-    //       >
-    //         Documentation
-    //       </a>
-    //     </div>
-    //   </main>
-    // </div>
-     <section className="space-y-2">
-      <h2 className="text-xl font-medium">写作起点</h2>
-      <p className="opacity-80">欢迎来到新站点的 MVP～</p>
-      <p className="text-sm">
-        RSS: <a className="underline" href="/rss.xml">/rss.xml</a>
-      </p>
-    </section>
+    <>
+      <section className="py-16 sm:py-24">
+        <p className="mb-5 text-xs font-semibold uppercase tracking-[0.24em] text-[hsl(var(--brand))]">
+          Zhou Zhirui · Engineering Notes
+        </p>
+        <h1 className="max-w-3xl text-4xl font-semibold leading-tight tracking-[-0.035em] sm:text-6xl">
+          把复杂系统，
+          <span className="text-[hsl(var(--brand))]">讲清楚。</span>
+        </h1>
+        <p className="mt-7 max-w-2xl text-base leading-8 text-[hsl(var(--muted))] sm:text-lg">
+          这里记录后端工程、交易链路、可靠性设计，以及把真实项目沉淀成可复用知识的过程。
+        </p>
+        <div className="mt-9 flex flex-wrap gap-3">
+          <Link
+            href="/posts"
+            className="rounded-full bg-[hsl(var(--text))] px-5 py-2.5 text-sm font-medium text-[hsl(var(--bg))] no-underline hover:bg-[hsl(var(--brand))] hover:text-white"
+          >
+            浏览文章
+          </Link>
+          <Link
+            href="/about"
+            className="rounded-full border border-[hsl(var(--border))] px-5 py-2.5 text-sm font-medium no-underline hover:border-[hsl(var(--brand))]"
+          >
+            了解作者
+          </Link>
+        </div>
+      </section>
+
+      <section className="grid gap-4 border-t border-[hsl(var(--border))] py-10 sm:grid-cols-[1.2fr_1fr] sm:gap-10">
+        <div>
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[hsl(var(--muted))]">
+            Writing in progress
+          </p>
+          <h2 className="mt-3 text-2xl font-semibold tracking-tight">
+            技术文章正在整理迁入
+          </h2>
+          <p className="mt-3 max-w-xl text-sm leading-7 text-[hsl(var(--muted))]">
+            新站已经启用。接下来会逐步迁移旧博客中的技术文章，并保留原始发布时间与历史链接信息。
+          </p>
+        </div>
+        <ul className="grid grid-cols-2 gap-2 self-start" aria-label="关注主题">
+          {topics.map((topic) => (
+            <li
+              key={topic}
+              className="rounded-xl border border-[hsl(var(--border))] bg-[hsl(var(--surface)/0.7)] px-3 py-3 text-sm"
+            >
+              {topic}
+            </li>
+          ))}
+        </ul>
+      </section>
+    </>
   );
 }
