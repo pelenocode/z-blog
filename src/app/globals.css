@@ -67,4 +67,132 @@ a:hover {
   display: inline;
 }
 
+.post-content {
+  font-size: 1rem;
+  line-height: 1.95;
+  color: hsl(var(--text));
+}
 
+.post-content > * + * {
+  margin-top: 1.3rem;
+}
+
+.post-content h2,
+.post-content h3,
+.post-content h4 {
+  scroll-margin-top: 2rem;
+  font-weight: 650;
+  line-height: 1.35;
+  letter-spacing: -0.02em;
+}
+
+.post-content h2 {
+  margin-top: 3.25rem;
+  padding-bottom: 0.65rem;
+  border-bottom: 1px solid hsl(var(--border));
+  font-size: 1.75rem;
+}
+
+.post-content h3 {
+  margin-top: 2.4rem;
+  font-size: 1.35rem;
+}
+
+.post-content h4 {
+  margin-top: 2rem;
+  font-size: 1.1rem;
+}
+
+.post-content h2 a,
+.post-content h3 a,
+.post-content h4 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.post-content p,
+.post-content li {
+  color: hsl(var(--text) / 0.92);
+}
+
+.post-content ul,
+.post-content ol {
+  padding-left: 1.5rem;
+}
+
+.post-content ul {
+  list-style: disc;
+}
+
+.post-content ol {
+  list-style: decimal;
+}
+
+.post-content li + li {
+  margin-top: 0.35rem;
+}
+
+.post-content blockquote {
+  border-left: 3px solid hsl(var(--brand));
+  padding: 0.25rem 0 0.25rem 1.1rem;
+  color: hsl(var(--muted));
+}
+
+.post-content blockquote p {
+  color: inherit;
+}
+
+.post-content table {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  border-spacing: 0;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.post-content th,
+.post-content td {
+  min-width: 8rem;
+  border: 1px solid hsl(var(--border));
+  padding: 0.7rem 0.8rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.post-content th {
+  background: hsl(var(--surface));
+  font-weight: 650;
+}
+
+.post-content code {
+  border-radius: 0.3rem;
+  background: hsl(var(--surface));
+  padding: 0.15rem 0.35rem;
+  font-size: 0.9em;
+}
+
+.post-content pre {
+  overflow-x: auto;
+  border: 1px solid hsl(var(--border));
+  border-radius: 0.8rem;
+  background: hsl(var(--surface));
+  padding: 1rem;
+}
+
+.post-content pre code {
+  background: transparent;
+  padding: 0;
+}
+
+.post-content hr {
+  margin: 2.5rem 0;
+  border: 0;
+  border-top: 1px solid hsl(var(--border));
+}
+
+@media (min-width: 640px) {
+  .post-content {
+    font-size: 1.05rem;
+  }
+}
