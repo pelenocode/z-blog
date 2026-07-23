@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { formatPostDate, getAllPosts } from "@/lib/posts";
 
 const topics = [
   "Java 后端",
@@ -8,6 +9,8 @@ const topics = [
 ];
 
 export default function Home() {
+  const latestPost = getAllPosts()[0];
+
   return (
     <>
       <section className="py-16 sm:py-24">
@@ -40,14 +43,26 @@ export default function Home() {
       <section className="grid gap-4 border-t border-[hsl(var(--border))] py-10 sm:grid-cols-[1.2fr_1fr] sm:gap-10">
         <div>
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[hsl(var(--muted))]">
-            Writing in progress
+            Latest writing
           </p>
           <h2 className="mt-3 text-2xl font-semibold tracking-tight">
-            技术文章正在整理迁入
+            {latestPost?.title ?? "技术文章正在整理迁入"}
           </h2>
           <p className="mt-3 max-w-xl text-sm leading-7 text-[hsl(var(--muted))]">
-            新站已经启用。接下来会逐步迁移旧博客中的技术文章，并保留原始发布时间与历史链接信息。
+            {latestPost?.description ??
+              "接下来会逐步迁移旧博客中的技术文章，并保留原始发布时间与历史链接信息。"}
           </p>
+          {latestPost ? (
+            <div className="mt-5 flex flex-wrap items-center gap-4 text-sm">
+              <Link href={`/posts/${latestPost.slug}`}>阅读全文 →</Link>
+              <time
+                dateTime={latestPost.publishedAt}
+                className="text-xs text-[hsl(var(--muted))]"
+              >
+                {formatPostDate(latestPost.publishedAt)}
+              </time>
+            </div>
+          ) : null}
         </div>
         <ul className="grid grid-cols-2 gap-2 self-start" aria-label="关注主题">
           {topics.map((topic) => (
