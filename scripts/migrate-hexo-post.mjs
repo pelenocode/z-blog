@@ -61,10 +61,29 @@ function validateBody(body) {
     throw new Error("Post body is empty");
   }
 
-  const fenceCount = (body.match(/^```/gm) ?? []).length;
+  const fenceCount = (body.match(/^[ \t]*```/gm) ?? []).length;
   if (fenceCount % 2 !== 0) {
     throw new Error("Post contains an unclosed code fence");
   }
+}
+
+function normalizeBody(content) {
+  const languageAliases = new Map([
+    ["c#", "text"],
+    ["java", "java"],
+    ["sql", "sql"],
+  ]);
+
+  return content
+    .replace(/<!--\s*more\s*-->/gi, "")
+    .replace(
+      /^([ \t]*```)([^\s`]*)[ \t]*$/gm,
+      (line, fence, language) => {
+        if (!language) return fence;
+        return `${fence}${languageAliases.get(language.toLowerCase()) ?? language.toLowerCase()}`;
+      },
+    )
+    .trim();
 }
 
 const sourceArg = readArgument("--source");
@@ -93,7 +112,7 @@ const categories = normalizeList(
 );
 const tags = normalizeList(parsed.data.tags);
 const publishedAt = normalizeDate(rawSource, parsed.data.date);
-const body = parsed.content.replace(/<!--\s*more\s*-->/gi, "").trim();
+const body = normalizeBody(parsed.content);
 
 if (!title) {
   throw new Error("Post title is missing");

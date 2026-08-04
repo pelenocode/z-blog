@@ -1,0 +1,116 @@
+[
+  {
+    "source": "source/_posts/技术手记｜几个关于事务的思考.md",
+    "slug": "transaction-notes",
+    "description": "从事务状态、传播行为、失效场景到消息队列边界，梳理 Spring 事务在真实业务中的使用方式与常见误区。",
+    "legacyUrl": "https://sajlle.github.io/2026/03/29/技术手记｜几个关于事务的思考/"
+  },
+  {
+    "source": "source/_posts/技术手记｜同一个bug，我让GPT，Fable-DeepSeek都给方案，最后方案Fable-GPT-DeepSeek.md",
+    "slug": "asset-loss-window-ai-comparison",
+    "description": "一个 closed → success 与优惠券恢复规则组合形成资损窗口的案例，以及 GPT、Fable、DeepSeek 三种方案的对比。",
+    "legacyUrl": "https://sajlle.github.io/2026/07/08/技术手记｜同一个bug，我让GPT，Fable-DeepSeek都给方案，最后方案Fable-GPT-DeepSeek/"
+  },
+  {
+    "source": "source/_posts/技术手记｜写写Spring-MVC的流程，Filter拦截了啥？Interceptor拦截了啥？.md",
+    "slug": "spring-mvc-filter-interceptor-flow",
+    "description": "按一次 HTTP 请求的完整路径，说明 Filter、DispatcherServlet、Interceptor 和 Controller 各自拦截的位置与职责。",
+    "legacyUrl": "https://sajlle.github.io/2026/02/23/技术手记｜写写Spring-MVC的流程，Filter拦截了啥？Interceptor拦截了啥？/"
+  },
+  {
+    "source": "source/_posts/技术手记｜风控踩坑，链路断层.md",
+    "slug": "risk-control-chain-gap",
+    "description": "从短信频控只在验证码错误时计数的缺口出发，拆解风控链路断层、正确计数位置与主流程设计。",
+    "legacyUrl": "https://sajlle.github.io/2026/02/13/技术手记｜风控踩坑，链路断层/"
+  },
+  {
+    "source": "source/_posts/技术手记｜当redis可以显式补偿的时候，需要上Canal吗？.md",
+    "slug": "redis-compensation-vs-canal",
+    "description": "围绕 Redis、数据库事务与缓存态的跨存储一致性，比较显式补偿、afterCommit 和 Canal 的适用边界。",
+    "legacyUrl": "https://sajlle.github.io/2026/02/08/技术手记｜当redis可以显式补偿的时候，需要上Canal吗？/"
+  },
+  {
+    "source": "source/_posts/技术手记｜改createUser存在性校验挡不住并发重复注册怎么改？.md",
+    "slug": "concurrent-user-registration",
+    "description": "为什么先查再插挡不住并发重复注册，以及如何用数据库唯一索引和异常处理完成最终兜底。",
+    "legacyUrl": "https://sajlle.github.io/2026/02/06/技术手记｜改createUser存在性校验挡不住并发重复注册怎么改？/"
+  },
+  {
+    "source": "source/_posts/一次把缓存当锁用的事故：Shop-查询接口击穿-误删-假404复盘.md",
+    "slug": "cache-as-lock-incident",
+    "description": "复盘一次把缓存 Key 当锁 Key 使用导致击穿、误删和假 404 的事故，梳理根因与修复方式。",
+    "legacyUrl": "https://sajlle.github.io/2026/01/09/一次把缓存当锁用的事故：Shop-查询接口击穿-误删-假404复盘/"
+  },
+  {
+    "source": "source/_posts/如何写一个纸糊的锁？.md",
+    "slug": "fragile-redis-lock",
+    "description": "用一个典型误删锁案例说明 Redis 分布式锁为何需要所有权校验、原子释放和合理的过期策略。",
+    "legacyUrl": "https://sajlle.github.io/2026/01/05/如何写一个纸糊的锁？/"
+  },
+  {
+    "source": "source/_posts/try-catch为啥要写到锁外面？.md",
+    "slug": "try-finally-around-lock",
+    "description": "解释缓存重建与锁场景中，为什么必须让 try/finally 覆盖拿锁后的完整流程，避免异常或提前返回造成锁泄漏。",
+    "legacyUrl": "https://sajlle.github.io/2026/01/05/try-catch为啥要写到锁外面？/"
+  },
+  {
+    "source": "source/_posts/空值缓存可以防止缓存穿透，但……什么时候要用它呢？.md",
+    "slug": "null-cache-usage",
+    "description": "结合固定列表 Key 与动态 ID Key，分析空值缓存真正防什么、什么时候值得使用以及如何设置过期策略。",
+    "legacyUrl": "https://sajlle.github.io/2026/01/05/空值缓存可以防止缓存穿透，但……什么时候要用它呢？/"
+  },
+  {
+    "source": "source/_posts/sleep和wait的区别？.md",
+    "slug": "sleep-vs-wait",
+    "description": "从缓存重建失败后的线程等待场景出发，解释 sleep、wait、monitor 与跨进程 Redis 锁之间的区别。",
+    "legacyUrl": "https://sajlle.github.io/2026/01/05/sleep和wait的区别？/"
+  },
+  {
+    "source": "source/_posts/互斥锁，逻辑过期，异步重建使用的区别？.md",
+    "slug": "mutex-logical-expiration-cache-rebuild",
+    "description": "比较互斥锁、逻辑过期与异步缓存重建的目标、流程、适用场景和延迟一致性取舍。",
+    "legacyUrl": "https://sajlle.github.io/2026/01/05/互斥锁，逻辑过期，异步重建使用的区别？/"
+  },
+  {
+    "source": "source/_posts/Java里的几个判空方法使用范围.md",
+    "slug": "java-null-checking",
+    "description": "结合数据库列表、Redis 空值与字符串内容，梳理 Java 中 null、空集合、空字符串等判空方式的适用边界。",
+    "legacyUrl": "https://sajlle.github.io/2026/01/03/Java里的几个判空方法使用范围/"
+  },
+  {
+    "source": "source/_posts/技术手记｜实体类设置默认参数值的注意事项.md",
+    "slug": "entity-default-values",
+    "description": "比较字段初始化、构造方法、JPA 注解与数据库默认值，说明实体类默认参数的可靠设置方式。",
+    "legacyUrl": "https://sajlle.github.io/2026/02/08/技术手记｜实体类设置默认参数值的注意事项/"
+  },
+  {
+    "source": "source/_posts/SQL查询啥时候用ResultMap？.md",
+    "slug": "mybatis-resultmap-usage",
+    "description": "结合字段映射、单位转换和冗余展示字段，说明 MyBatis 查询中 ResultMap、SQL 转换与 Service 组装的边界。",
+    "legacyUrl": "https://sajlle.github.io/2026/01/02/SQL查询啥时候用ResultMap？/"
+  },
+  {
+    "source": "source/_posts/为啥遇到错误分支不直接return，而是throw？.md",
+    "slug": "throw-vs-return-error-branches",
+    "description": "分析业务错误分支中直接 return 与抛异常的差异，以及它们对事务回滚、调用链和统一异常处理的影响。",
+    "legacyUrl": "https://sajlle.github.io/2025/12/14/为啥遇到错误分支不直接return，而是throw？/"
+  },
+  {
+    "source": "source/_posts/今日踩到Java老坑，Long比较报错.md",
+    "slug": "java-long-comparison",
+    "description": "复盘 Java Long 使用 != 比较造成的身份校验错误，解释缓存区间、拆箱与 Objects.equals 的正确用法。",
+    "legacyUrl": "https://sajlle.github.io/2025/12/14/今日踩到Java老坑，Long比较报错/"
+  },
+  {
+    "source": "source/_posts/技术手记｜代码审核新思路.md",
+    "slug": "code-review-workflow",
+    "description": "一套从本地门槛、Codex 代码审查、修复复验到风险归档的可执行代码评审 SOP。",
+    "legacyUrl": "https://sajlle.github.io/2026/02/09/技术手记｜代码审核新思路/"
+  },
+  {
+    "source": "source/_posts/终端记事本·灵魂补丁版～弥补Mac没有记事本的遗憾.md",
+    "slug": "terminal-notepad-for-mac",
+    "description": "用一个带时间戳的 Shell 脚本，在 macOS 桌面快速创建并打开临时 Markdown 记事文件。",
+    "legacyUrl": "https://sajlle.github.io/2025/12/16/终端记事本·灵魂补丁版～弥补Mac没有记事本的遗憾/"
+  }
+]
