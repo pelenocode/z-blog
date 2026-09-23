@@ -2,13 +2,13 @@
 title: "技术手记｜实体类设置默认参数值的注意事项"
 slug: "entity-default-values"
 date: "2026-02-08T21:12:21+08:00"
+updated: "2026-02-08T21:12:21+08:00"
 description: "比较字段初始化、构造方法、JPA 注解与数据库默认值，说明实体类默认参数的可靠设置方式。"
 categories:
   - "技术手记"
 tags:
   - "实体类"
   - "注解"
-legacyUrl: "https://sajlle.github.io/2026/02/08/技术手记｜实体类设置默认参数值的注意事项/"
 draft: false
 ---
 实体类加注解注意事项

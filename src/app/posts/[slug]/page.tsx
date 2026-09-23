@@ -71,8 +71,16 @@ export default async function PostPage({ params }: PostPageProps) {
             </span>
           ))}
           <time dateTime={post.publishedAt}>
-            {formatPostDate(post.publishedAt)}
+            发布于 {formatPostDate(post.publishedAt)}
           </time>
+          {post.updatedAt && post.updatedAt !== post.publishedAt ? (
+            <>
+              <span aria-hidden="true">·</span>
+              <time dateTime={post.updatedAt}>
+                更新于 {formatPostDate(post.updatedAt)}
+              </time>
+            </>
+          ) : null}
           <span aria-hidden="true">·</span>
           <span>{post.readingMinutes} 分钟阅读</span>
         </div>
@@ -107,19 +115,6 @@ export default async function PostPage({ params }: PostPageProps) {
             </span>
           ))}
         </div>
-        {post.legacyUrl ? (
-          <p className="mt-6 text-xs leading-6 text-[hsl(var(--muted))]">
-            本文从旧博客迁入，原始链接：
-            <a
-              href={post.legacyUrl}
-              target="_blank"
-              rel="noreferrer"
-              className="ml-1"
-            >
-              查看历史页面
-            </a>
-          </p>
-        ) : null}
       </footer>
     </article>
   );

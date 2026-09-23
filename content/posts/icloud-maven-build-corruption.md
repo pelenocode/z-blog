@@ -2,13 +2,13 @@
 title: "日常记录｜项目的门禁测试失败了，原因是啥呢？是iCloud同步工作目录，导致出现随机的NoClassDefFoundError"
 slug: "icloud-maven-build-corruption"
 date: "2026-09-10T11:46:35+08:00"
+updated: "2026-09-10T11:46:35+08:00"
 description: "记录 iCloud File Provider 干扰 Maven/Failsafe 构建产物的取证过程，以及迁移到非同步目录后的验证结果。"
 categories:
   - "日常记录"
 tags:
   - "Bug记录"
   - "iCloud"
-legacyUrl: "https://sajlle.github.io/2026/09/10/日常记录｜项目的门禁测试失败了，原因是啥呢？是iCloud同步工作目录，导致出现随机的NoClassDefFoundError/"
 draft: false
 ---
 如题～

@@ -2,13 +2,13 @@
 title: "BugFix｜AgentV0Bug：多供应商LLM SDK接入的时候，结束状态采用黑名单，仍可能接收未正常完成的响应"
 slug: "llm-finish-reason-fail-closed"
 date: "2026-09-14T16:10:08+08:00"
+updated: "2026-09-14T16:10:08+08:00"
 description: "从 finish_reason 黑名单的漏判出发，说明多供应商 LLM 协议边界为何应当采用成功状态白名单并默认失败关闭。"
 categories:
   - "BugFix"
 tags:
   - "SDK integration"
   - "Provider semantic normalization"
-legacyUrl: "https://sajlle.github.io/2026/09/14/BugFix｜AgentV0Bug：结束状态采用黑名单，仍可能接收未正常完成的响应/"
 draft: false
 ---
 如题～

@@ -2,6 +2,7 @@
 title: "sleep和wait的区别？"
 slug: "sleep-vs-wait"
 date: "2026-01-05T15:01:04+08:00"
+updated: "2026-01-05T15:01:04+08:00"
 description: "从缓存重建失败后的线程等待场景出发，解释 sleep、wait、monitor 与跨进程 Redis 锁之间的区别。"
 categories:
   - "技术手记"
@@ -9,7 +10,6 @@ tags:
   - "wait"
   - "sleep"
   - "Java"
-legacyUrl: "https://sajlle.github.io/2026/01/05/sleep和wait的区别？/"
 draft: false
 ---
 # 问

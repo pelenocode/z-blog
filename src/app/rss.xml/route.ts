@@ -29,7 +29,8 @@ export async function GET() {
       id: link,
       link,
       description: post.description,
-      date: new Date(post.publishedAt),
+      date: new Date(post.updatedAt ?? post.publishedAt),
+      published: new Date(post.publishedAt),
       category: [...post.categories, ...post.tags].map((name) => ({ name })),
       author: [{ name: siteConfig.shortName, link: siteConfig.url }],
     });

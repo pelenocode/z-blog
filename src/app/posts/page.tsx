@@ -18,7 +18,7 @@ export default function PostsPage() {
       </p>
       <h1 className="mt-4 text-4xl font-semibold tracking-tight">文章归档</h1>
       <p className="mt-4 text-sm leading-7 text-[hsl(var(--muted))]">
-        共 {posts.length} 篇。保留原始发布时间，并持续校对迁入旧博客的技术手记。
+        共 {posts.length} 篇。保留文章原始发布与更新日期，并持续校对内容。
       </p>
 
       <ol className="mt-10 divide-y divide-[hsl(var(--border))] border-y border-[hsl(var(--border))]">

@@ -2,12 +2,12 @@
 title: "BugFix｜AgentV0Bug：兼容层的“本地强校验”实际上不是严格 Schema 校验"
 slug: "strict-structured-output-validation"
 date: "2026-09-14T15:59:54+08:00"
+updated: "2026-09-14T15:59:54+08:00"
 description: "说明共享 ObjectMapper 的宽松反序列化如何绕过结构化输出边界，并把错误字段静默强转或丢弃。"
 categories:
   - "BugFix"
 tags:
   - "SDK integration"
-legacyUrl: "https://sajlle.github.io/2026/09/14/BugFix｜AgentV0Bug：兼容层的“本地强校验”实际上不是严格-Schema-校验/"
 draft: false
 ---
 如题～

@@ -26,8 +26,6 @@ function runMigration(post, sourceRoot, shouldWrite) {
     post.slug,
     "--description",
     post.description,
-    "--legacy-url",
-    post.legacyUrl,
     ...(shouldWrite ? ["--write"] : []),
   ];
   const result = spawnSync(process.execPath, commandArgs, {
@@ -62,7 +60,7 @@ if (!Array.isArray(manifest) || manifest.length === 0) {
   throw new Error("Migration manifest must be a non-empty array");
 }
 
-const requiredFields = ["source", "slug", "description", "legacyUrl"];
+const requiredFields = ["source", "slug", "description"];
 const slugs = new Set();
 
 for (const [index, post] of manifest.entries()) {
@@ -107,12 +105,15 @@ console.log(
       manifest: manifestPath,
       sourceRoot,
       total: migrated.length,
-      posts: migrated.map(({ title, slug, publishedAt, bodyCharacters }) => ({
-        title,
-        slug,
-        publishedAt,
-        bodyCharacters,
-      })),
+      posts: migrated.map(
+        ({ title, slug, publishedAt, updatedAt, bodyCharacters }) => ({
+          title,
+          slug,
+          publishedAt,
+          updatedAt,
+          bodyCharacters,
+        }),
+      ),
     },
     null,
     2,

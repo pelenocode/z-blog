@@ -2,6 +2,7 @@
 title: "try catch为啥要写到锁外面？"
 slug: "try-finally-around-lock"
 date: "2026-01-05T15:58:45+08:00"
+updated: "2026-01-05T15:58:45+08:00"
 description: "解释缓存重建与锁场景中，为什么必须让 try/finally 覆盖拿锁后的完整流程，避免异常或提前返回造成锁泄漏。"
 categories:
   - "技术手记"
@@ -9,7 +10,6 @@ tags:
   - "Java"
   - "异常处理"
   - "锁"
-legacyUrl: "https://sajlle.github.io/2026/01/05/try-catch为啥要写到锁外面？/"
 draft: false
 ---
 简略答案：

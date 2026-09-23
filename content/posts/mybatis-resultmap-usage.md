@@ -2,12 +2,12 @@
 title: "SQL查询啥时候用ResultMap？"
 slug: "mybatis-resultmap-usage"
 date: "2026-01-02T19:49:19+08:00"
+updated: "2026-01-02T19:49:19+08:00"
 description: "结合字段映射、单位转换和冗余展示字段，说明 MyBatis 查询中 ResultMap、SQL 转换与 Service 组装的边界。"
 categories:
   - "技术手记"
 tags:
   - "SQL"
-legacyUrl: "https://sajlle.github.io/2026/01/02/SQL查询啥时候用ResultMap？/"
 draft: false
 ---
 # 前情提要

@@ -2,6 +2,7 @@
 title: "空值缓存可以防止缓存穿透，但……什么时候要用它呢？"
 slug: "null-cache-usage"
 date: "2026-01-05T15:41:52+08:00"
+updated: "2026-01-05T15:41:52+08:00"
 description: "结合固定列表 Key 与动态 ID Key，分析空值缓存真正防什么、什么时候值得使用以及如何设置过期策略。"
 categories:
   - "技术手记"
@@ -9,7 +10,6 @@ tags:
   - "缓存穿透"
   - "空值缓存"
   - "Java"
-legacyUrl: "https://sajlle.github.io/2026/01/05/空值缓存可以防止缓存穿透，但……什么时候要用它呢？/"
 draft: false
 ---
 # 场景：

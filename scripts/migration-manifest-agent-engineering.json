@@ -2,73 +2,61 @@
   {
     "source": "source/_posts/BugFix｜AgentV0Bug：为什么单测全绿，集成测试还能挂？.md",
     "slug": "spring-test-context-wiring-gap",
-    "description": "分析单元测试和 Maven test 全绿、集成测试却稳定失败的原因，最终定位为测试上下文遗漏公共 Spring 配置，而非生产 wiring 故障。",
-    "legacyUrl": "https://sajlle.github.io/2026/09/15/BugFix｜AgentV0Bug：为什么单测全绿，集成测试还能挂？/"
+    "description": "分析单元测试和 Maven test 全绿、集成测试却稳定失败的原因，最终定位为测试上下文遗漏公共 Spring 配置，而非生产 wiring 故障。"
   },
   {
     "source": "source/_posts/BugFix｜AgentV0Bug：OpenAI-与兼容供应商双开会导致应用启动失败.md",
     "slug": "multi-provider-openai-client-ambiguity",
-    "description": "复盘多供应商 LLM 接入后两个同类型 OpenAIClient Bean 造成的启动歧义，以及显式限定客户端依赖的修复方式。",
-    "legacyUrl": "https://sajlle.github.io/2026/09/14/BugFix｜AgentV0Bug：OpenAI-与兼容供应商双开会导致应用启动失败/"
+    "description": "复盘多供应商 LLM 接入后两个同类型 OpenAIClient Bean 造成的启动歧义，以及显式限定客户端依赖的修复方式。"
   },
   {
     "source": "source/_posts/BugFix｜AgentV0Bug：兼容层的“本地强校验”实际上不是严格-Schema-校验.md",
     "slug": "strict-structured-output-validation",
-    "description": "说明共享 ObjectMapper 的宽松反序列化如何绕过结构化输出边界，并把错误字段静默强转或丢弃。",
-    "legacyUrl": "https://sajlle.github.io/2026/09/14/BugFix｜AgentV0Bug：兼容层的“本地强校验”实际上不是严格-Schema-校验/"
+    "description": "说明共享 ObjectMapper 的宽松反序列化如何绕过结构化输出边界，并把错误字段静默强转或丢弃。"
   },
   {
     "source": "source/_posts/BugFix｜AgentV0Bug：结束状态采用黑名单，仍可能接收未正常完成的响应.md",
     "slug": "llm-finish-reason-fail-closed",
-    "description": "从 finish_reason 黑名单的漏判出发，说明多供应商 LLM 协议边界为何应当采用成功状态白名单并默认失败关闭。",
-    "legacyUrl": "https://sajlle.github.io/2026/09/14/BugFix｜AgentV0Bug：结束状态采用黑名单，仍可能接收未正常完成的响应/"
+    "description": "从 finish_reason 黑名单的漏判出发，说明多供应商 LLM 协议边界为何应当采用成功状态白名单并默认失败关闭。"
   },
   {
     "source": "source/_posts/BugFix｜AgentVOBug：NOT-FOUND和REFERENCE-UNAVAILABLE的语义分歧.md",
     "slug": "missing-reference-semantics",
-    "description": "区分 NOT_FOUND 与 REFERENCE_UNAVAILABLE，展示如何通过事实模型编码不确定性，避免 Agent 基于缺失关联编造结论。",
-    "legacyUrl": "https://sajlle.github.io/2026/09/14/BugFix｜AgentVOBug：NOT-FOUND和REFERENCE-UNAVAILABLE的语义分歧/"
+    "description": "区分 NOT_FOUND 与 REFERENCE_UNAVAILABLE，展示如何通过事实模型编码不确定性，避免 Agent 基于缺失关联编造结论。"
   },
   {
     "source": "source/_posts/BugFix｜AgentV0Bug：RabbitMQ测试「队列空了」，但事务还没提交～.md",
     "slug": "rabbitmq-test-transaction-completion",
-    "description": "复盘 RabbitMQ 集成测试把队列为空误判为事务完成的偶发失败，并改用提交与 afterCommit 完成信号作为观测点。",
-    "legacyUrl": "https://sajlle.github.io/2026/09/13/BugFix｜AgentV0Bug：RabbitMQ测试「队列空了」，但事务还没提交～/"
+    "description": "复盘 RabbitMQ 集成测试把队列为空误判为事务完成的偶发失败，并改用提交与 afterCommit 完成信号作为观测点。"
   },
   {
     "source": "source/_posts/BugFix｜AgentV0Bug：Redis集成测试出现1ms-flaky，最后发现是跨域时钟比较.md",
     "slug": "redis-cross-clock-flaky-test",
-    "description": "定位 Redis Lua 与 JVM 使用不同时间源造成的 1ms 偶发失败，并用同一时钟域和有界轮询稳定验证。",
-    "legacyUrl": "https://sajlle.github.io/2026/09/13/BugFix｜AgentV0Bug：Redis集成测试出现1ms-flaky，最后发现是跨域时钟比较/"
+    "description": "定位 Redis Lua 与 JVM 使用不同时间源造成的 1ms 偶发失败，并用同一时钟域和有界轮询稳定验证。"
   },
   {
     "source": "source/_posts/BugFix｜AgentV0Bug：voucherInstance被LIMIT-1静默截断.md",
     "slug": "voucher-instance-limit-one",
-    "description": "分析业务 Mapper 的 LIMIT 1 如何静默掩盖一对多异常，并让事实层越权替诊断层做选择。",
-    "legacyUrl": "https://sajlle.github.io/2026/09/13/BugFix｜AgentV0Bug：voucherInstance被LIMIT-1静默截断/"
+    "description": "分析业务 Mapper 的 LIMIT 1 如何静默掩盖一对多异常，并让事实层越权替诊断层做选择。"
   },
   {
     "source": "source/_posts/BugFix｜AgentV0Bug：CaseClassifier一开始Money-priority高于identity.md",
     "slug": "diagnosis-precedence-by-dependency",
-    "description": "说明异常分类优先级应按照推理依赖关系排序，而不是简单按照表面严重程度排序。",
-    "legacyUrl": "https://sajlle.github.io/2026/09/14/BugFix｜AgentV0Bug：CaseClassifier一开始Money-priority高于identity/"
+    "description": "说明异常分类优先级应按照推理依赖关系排序，而不是简单按照表面严重程度排序。"
   },
   {
     "source": "source/_posts/日常记录｜项目的门禁测试失败了，原因是啥呢？是iCloud同步工作目录，导致出现随机的NoClassDefFoundError.md",
     "slug": "icloud-maven-build-corruption",
-    "description": "记录 iCloud File Provider 干扰 Maven/Failsafe 构建产物的取证过程，以及迁移到非同步目录后的验证结果。",
-    "legacyUrl": "https://sajlle.github.io/2026/09/10/日常记录｜项目的门禁测试失败了，原因是啥呢？是iCloud同步工作目录，导致出现随机的NoClassDefFoundError/"
+    "description": "记录 iCloud File Provider 干扰 Maven/Failsafe 构建产物的取证过程，以及迁移到非同步目录后的验证结果。"
   },
   {
     "source": "source/_posts/技术手记｜聊一下关于Agent套壳V0感受～.md",
     "slug": "deterministic-agent-architecture",
-    "description": "总结 Agent V0 的分层设计：事实层、确定性诊断与权限边界负责正确性，LLM 只承担最后一公里解释。",
-    "legacyUrl": "https://sajlle.github.io/2026/09/12/技术手记｜聊一下关于Agent套壳V0感受～/"
+    "description": "总结 Agent V0 的分层设计：事实层、确定性诊断与权限边界负责正确性，LLM 只承担最后一公里解释。"
   },
   {
     "source": "source/_posts/日常记录｜Agent真实联调通过，有几个需要打磨的地方～.md",
     "slug": "agent-v0-integration-review",
-    "description": "复盘 Agent V0 真实联调中确定性诊断、allowedActions、时间线完整性和解释字段边界的验证结果。",
-    "legacyUrl": "https://sajlle.github.io/2026/09/11/日常记录｜Agent真实联调通过，有几个需要打磨的地方～/"
+    "description": "复盘 Agent V0 真实联调中确定性诊断、allowedActions、时间线完整性和解释字段边界的验证结果。"
   }
 ]

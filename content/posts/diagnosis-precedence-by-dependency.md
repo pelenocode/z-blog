@@ -2,13 +2,13 @@
 title: "BugFix｜AgentV0Bug：CaseClassifier一开始Money priority高于identity"
 slug: "diagnosis-precedence-by-dependency"
 date: "2026-09-14T15:29:29+08:00"
+updated: "2026-09-14T15:29:29+08:00"
 description: "说明异常分类优先级应按照推理依赖关系排序，而不是简单按照表面严重程度排序。"
 categories:
   - "BugFix"
 tags:
   - "CaseClassifier"
   - "工程判断"
-legacyUrl: "https://sajlle.github.io/2026/09/14/BugFix｜AgentV0Bug：CaseClassifier一开始Money-priority高于identity/"
 draft: false
 ---
 原始precedence是 `Money mismatch -> Identity mismatch`；

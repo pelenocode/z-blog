@@ -2,13 +2,13 @@
 title: "BugFix｜AgentV0Bug：NOT_FOUND和REFERENCE_UNAVAILABLE的语义分歧"
 slug: "missing-reference-semantics"
 date: "2026-09-14T15:23:02+08:00"
+updated: "2026-09-14T15:23:02+08:00"
 description: "区分 NOT_FOUND 与 REFERENCE_UNAVAILABLE，展示如何通过事实模型编码不确定性，避免 Agent 基于缺失关联编造结论。"
 categories:
   - "BugFix"
 tags:
   - "工程判断"
   - "状态枚举"
-legacyUrl: "https://sajlle.github.io/2026/09/14/BugFix｜AgentVOBug：NOT-FOUND和REFERENCE-UNAVAILABLE的语义分歧/"
 draft: false
 ---
 如题～

@@ -50,7 +50,7 @@ export default function Home() {
           </h2>
           <p className="mt-3 max-w-xl text-sm leading-7 text-[hsl(var(--muted))]">
             {latestPost?.description ??
-              "接下来会逐步迁移旧博客中的技术文章，并保留原始发布时间与历史链接信息。"}
+              "技术文章正在整理中，发布与更新日期会随文章一并保留。"}
           </p>
           {latestPost ? (
             <div className="mt-5 flex flex-wrap items-center gap-4 text-sm">

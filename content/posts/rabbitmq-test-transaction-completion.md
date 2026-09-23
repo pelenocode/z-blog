@@ -2,6 +2,7 @@
 title: "BugFix｜AgentV0Bug：RabbitMQ测试「队列空了」，但事务还没提交～"
 slug: "rabbitmq-test-transaction-completion"
 date: "2026-09-13T17:50:11+08:00"
+updated: "2026-09-13T17:50:11+08:00"
 description: "复盘 RabbitMQ 集成测试把队列为空误判为事务完成的偶发失败，并改用提交与 afterCommit 完成信号作为观测点。"
 categories:
   - "BugFix"
@@ -9,7 +10,6 @@ tags:
   - "RabbitMQ"
   - "集成测试"
   - "异步队列"
-legacyUrl: "https://sajlle.github.io/2026/09/13/BugFix｜AgentV0Bug：RabbitMQ测试「队列空了」，但事务还没提交～/"
 draft: false
 ---
 原测试的等待条件是：

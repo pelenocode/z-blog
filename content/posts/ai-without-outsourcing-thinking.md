@@ -2,6 +2,7 @@
 title: "技术手记｜最近看论文有感：用AI，而不是把脑子外包给AI"
 slug: "ai-without-outsourcing-thinking"
 date: "2026-03-01T13:22:08+08:00"
+updated: "2026-03-01T13:22:08+08:00"
 description: "结合学习研究中的不同 AI 使用模式，讨论怎样把 AI 用作理解工具，而不是把调试、验证和思考整体外包。"
 categories:
   - "技术手记"
@@ -9,7 +10,6 @@ tags:
   - "AI"
   - "效率"
   - "学习"
-legacyUrl: "https://sajlle.github.io/2026/03/01/技术手记｜最近看论文有感：要用AI，不是把脑子外包给AI/"
 draft: false
 ---
 最近看arXiv上的文章，对比了用AI和不用AI的人，学习技能效果如何。自媒体把这个文章结论放大成，用AI会让你技能下降。

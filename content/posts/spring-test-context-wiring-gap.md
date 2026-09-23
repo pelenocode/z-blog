@@ -2,13 +2,13 @@
 title: "BugFix｜AgentV0Bug：为什么单测全绿，集成测试还能挂？"
 slug: "spring-test-context-wiring-gap"
 date: "2026-09-15T18:57:26+08:00"
+updated: "2026-09-15T18:57:26+08:00"
 description: "分析单元测试和 Maven test 全绿、集成测试却稳定失败的原因，最终定位为测试上下文遗漏公共 Spring 配置，而非生产 wiring 故障。"
 categories:
   - "BugFix"
 tags:
   - "AgentV0"
   - "Spring Boot"
-legacyUrl: "https://sajlle.github.io/2026/09/15/BugFix｜AgentV0Bug：为什么单测全绿，集成测试还能挂？/"
 draft: false
 ---
 ## TL;DR

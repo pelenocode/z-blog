@@ -2,6 +2,7 @@
 title: "BugFix｜AgentV0Bug：Redis集成测试出现1ms flaky，最后发现是跨域时钟比较"
 slug: "redis-cross-clock-flaky-test"
 date: "2026-09-13T17:41:40+08:00"
+updated: "2026-09-13T17:41:40+08:00"
 description: "定位 Redis Lua 与 JVM 使用不同时间源造成的 1ms 偶发失败，并用同一时钟域和有界轮询稳定验证。"
 categories:
   - "BugFix"
@@ -9,7 +10,6 @@ tags:
   - "Redis"
   - "集成测试"
   - "跨域时钟断言"
-legacyUrl: "https://sajlle.github.io/2026/09/13/BugFix｜AgentV0Bug：Redis集成测试出现1ms-flaky，最后发现是跨域时钟比较/"
 draft: false
 ---
 原始测试是：

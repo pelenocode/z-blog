@@ -2,12 +2,12 @@
 title: "BugFix｜AgentV0Bug：OpenAI 与兼容供应商双开会导致应用启动失败"
 slug: "multi-provider-openai-client-ambiguity"
 date: "2026-09-14T15:55:31+08:00"
+updated: "2026-09-14T15:55:31+08:00"
 description: "复盘多供应商 LLM 接入后两个同类型 OpenAIClient Bean 造成的启动歧义，以及显式限定客户端依赖的修复方式。"
 categories:
   - "BugFix"
 tags:
   - "SDK integration"
-legacyUrl: "https://sajlle.github.io/2026/09/14/BugFix｜AgentV0Bug：OpenAI-与兼容供应商双开会导致应用启动失败/"
 draft: false
 ---
 如题～

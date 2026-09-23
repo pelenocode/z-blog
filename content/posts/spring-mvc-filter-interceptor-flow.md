@@ -2,6 +2,7 @@
 title: "技术手记｜写写Spring MVC的流程，Filter拦截了啥？Interceptor拦截了啥？"
 slug: "spring-mvc-filter-interceptor-flow"
 date: "2026-02-23T15:07:41+08:00"
+updated: "2026-02-23T15:07:41+08:00"
 description: "按一次 HTTP 请求的完整路径，说明 Filter、DispatcherServlet、Interceptor 和 Controller 各自拦截的位置与职责。"
 categories:
   - "技术手记"
@@ -10,7 +11,6 @@ tags:
   - "Filter"
   - "Interceptor"
   - "八股"
-legacyUrl: "https://sajlle.github.io/2026/02/23/技术手记｜写写Spring-MVC的流程，Filter拦截了啥？Interceptor拦截了啥？/"
 draft: false
 ---
 来，先上一个一次HTTP请求在Spring Boot里走过的路径（单请求路径的横切面）

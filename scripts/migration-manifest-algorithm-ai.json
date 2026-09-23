@@ -2,37 +2,31 @@
   {
     "source": "source/_posts/算法｜今天上午写三路QuickSelect，一点总结.md",
     "slug": "three-way-quickselect",
-    "description": "从循环不变量、未知区收缩和 pivot 取值出发，梳理三路 QuickSelect 的双向写法、边界条件与常见错误。",
-    "legacyUrl": "https://sajlle.github.io/2026/09/20/算法｜今天上午写三路QuickSelect，一点总结/"
+    "description": "从循环不变量、未知区收缩和 pivot 取值出发，梳理三路 QuickSelect 的双向写法、边界条件与常见错误。"
   },
   {
     "source": "source/_posts/论文阅读｜当思考开始藏进隐藏蹭：Looped-Transformers与可解释性的倒退.md",
     "slug": "looped-transformers-interpretability",
-    "description": "围绕 Looped Transformers 与 latent thoughts，讨论隐藏状态内部迭代带来的推理能力、组合泛化与可解释性风险。",
-    "legacyUrl": "https://sajlle.github.io/2026/04/22/论文阅读｜当思考开始藏进隐藏蹭：Looped-Transformers与可解释性的倒退/"
+    "description": "围绕 Looped Transformers 与 latent thoughts，讨论隐藏状态内部迭代带来的推理能力、组合泛化与可解释性风险。"
   },
   {
     "source": "source/_posts/技术手记｜最近看论文有感：要用AI，不是把脑子外包给AI.md",
     "slug": "ai-without-outsourcing-thinking",
-    "description": "结合学习研究中的不同 AI 使用模式，讨论怎样把 AI 用作理解工具，而不是把调试、验证和思考整体外包。",
-    "legacyUrl": "https://sajlle.github.io/2026/03/01/技术手记｜最近看论文有感：要用AI，不是把脑子外包给AI/"
+    "description": "结合学习研究中的不同 AI 使用模式，讨论怎样把 AI 用作理解工具，而不是把调试、验证和思考整体外包。"
   },
   {
     "source": "source/_posts/技术手记｜AI会抢哪些人的饭碗？哪些技能在AI时代越来越稀缺？.md",
     "slug": "ai-jobs-and-verification-skills",
-    "description": "从验证带宽与可测量性出发，分析 AI 自动化会替代哪些工作，以及可追溯、可验证和承担责任的能力为何更稀缺。",
-    "legacyUrl": "https://sajlle.github.io/2026/03/01/技术手记｜AI会抢哪些人的饭碗？哪些技能在AI时代越来越稀缺？/"
+    "description": "从验证带宽与可测量性出发，分析 AI 自动化会替代哪些工作，以及可追溯、可验证和承担责任的能力为何更稀缺。"
   },
   {
     "source": "source/_posts/日常记录｜用AI设计项目之后，我感觉越来越疲惫～.md",
     "slug": "learning-technology-with-ai",
-    "description": "从 RabbitMQ 最小 demo 的学习过程出发，比较 AI 与真人教学在即时追问、概念压缩和理解验证上的差异。",
-    "legacyUrl": "https://sajlle.github.io/2026/03/12/日常记录｜用AI设计项目之后，我感觉越来越疲惫～/"
+    "description": "从 RabbitMQ 最小 demo 的学习过程出发，比较 AI 与真人教学在即时追问、概念压缩和理解验证上的差异。"
   },
   {
     "source": "source/_posts/与AI协作开发项目的流程总结.md",
     "slug": "ai-assisted-development-workflow",
-    "description": "一套与 AI 协作开发项目的上下文、文档、任务拆分、代码评审和测试闭环模板。",
-    "legacyUrl": "https://sajlle.github.io/2025/12/15/与AI协作开发项目的流程总结/"
+    "description": "一套与 AI 协作开发项目的上下文、文档、任务拆分、代码评审和测试闭环模板。"
   }
 ]

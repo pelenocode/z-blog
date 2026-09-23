@@ -2,6 +2,7 @@
 title: "Java里的几个判空方法使用范围"
 slug: "java-null-checking"
 date: "2026-01-03T13:50:21+08:00"
+updated: "2026-01-03T13:50:21+08:00"
 description: "结合数据库列表、Redis 空值与字符串内容，梳理 Java 中 null、空集合、空字符串等判空方式的适用边界。"
 categories:
   - "技术手记"
@@ -9,7 +10,6 @@ tags:
   - "Java"
   - "NPE"
   - "判空方法"
-legacyUrl: "https://sajlle.github.io/2026/01/03/Java里的几个判空方法使用范围/"
 draft: false
 ---
 # 起因

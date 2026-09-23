@@ -14,7 +14,6 @@ type PostFrontmatter = {
   description?: unknown;
   categories?: unknown;
   tags?: unknown;
-  legacyUrl?: unknown;
   draft?: unknown;
 };
 
@@ -26,7 +25,6 @@ export type PostSummary = {
   updatedAt?: string;
   categories: string[];
   tags: string[];
-  legacyUrl?: string;
   readingMinutes: number;
 };
 
@@ -106,10 +104,6 @@ function readPost(fileName: string): LoadedPost {
           : normalizeDate(data.updated, "updated", fileName),
       categories: normalizeStringList(data.categories, "categories", fileName),
       tags: normalizeStringList(data.tags, "tags", fileName),
-      legacyUrl:
-        data.legacyUrl === undefined
-          ? undefined
-          : expectString(data.legacyUrl, "legacyUrl", fileName),
       readingMinutes: estimateReadingMinutes(parsed.content),
       content: parsed.content.trim(),
     },

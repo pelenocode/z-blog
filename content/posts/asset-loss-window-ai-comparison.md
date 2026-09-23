@@ -2,6 +2,7 @@
 title: "技术手记｜两条规则各自合理，组合起来是资损窗口：三个AI的答卷对比"
 slug: "asset-loss-window-ai-comparison"
 date: "2026-07-08T19:08:18+08:00"
+updated: "2026-07-08T19:08:18+08:00"
 description: "一个 closed → success 与优惠券恢复规则组合形成资损窗口的案例，以及 GPT、Fable、DeepSeek 三种方案的对比。"
 categories:
   - "技术手记"
@@ -10,7 +11,6 @@ tags:
   - "GPT"
   - "Fable"
   - "资损"
-legacyUrl: "https://sajlle.github.io/2026/07/08/技术手记｜同一个bug，我让GPT，Fable-DeepSeek都给方案，最后方案Fable-GPT-DeepSeek/"
 draft: false
 ---
 ## 问题是这样的，退款场景的资损bug：

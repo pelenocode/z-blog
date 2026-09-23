@@ -2,6 +2,7 @@
 title: "终端记事本·灵魂补丁版～弥补Mac没有记事本的遗憾"
 slug: "terminal-notepad-for-mac"
 date: "2025-12-16T17:53:31+08:00"
+updated: "2025-12-16T17:53:31+08:00"
 description: "用一个带时间戳的 Shell 脚本，在 macOS 桌面快速创建并打开临时 Markdown 记事文件。"
 categories:
   - "技术手记"
@@ -11,7 +12,6 @@ tags:
   - "记事本"
   - "给设备打补丁"
   - "修理工"
-legacyUrl: "https://sajlle.github.io/2025/12/16/终端记事本·灵魂补丁版～弥补Mac没有记事本的遗憾/"
 draft: false
 ---
 自从今年换了Mac之后，哪哪都好，唯一痛点，Mac没有记事本，不能像windows一样，右键点开，新建文件。

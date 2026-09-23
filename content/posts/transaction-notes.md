@@ -2,6 +2,7 @@
 title: "技术手记｜几个关于事务的思考"
 slug: "transaction-notes"
 date: "2026-03-29T10:24:05+08:00"
+updated: "2026-03-29T10:24:05+08:00"
 description: "从事务状态、传播行为、失效场景到消息队列边界，梳理 Spring 事务在真实业务中的使用方式与常见误区。"
 categories:
   - "技术手记"
@@ -9,7 +10,6 @@ tags:
   - "事务"
   - "数据库"
   - "ACID"
-legacyUrl: "https://sajlle.github.io/2026/03/29/技术手记｜几个关于事务的思考/"
 draft: false
 ---
 # 关于事务的状态

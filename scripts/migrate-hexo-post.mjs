@@ -32,8 +32,10 @@ function normalizeList(value) {
   return [];
 }
 
-function normalizeDate(rawSource, parsedDate) {
-  const rawDate = rawSource.match(/^date:\s*(.+)$/m)?.[1]?.trim();
+function normalizeDate(rawSource, field, parsedDate) {
+  const rawDate = rawSource
+    .match(new RegExp(`^${field}:\\s*(.+)$`, "m"))?.[1]
+    ?.trim();
 
   if (rawDate && /^\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}$/.test(rawDate)) {
     return `${rawDate.replace(" ", "T")}+08:00`;
@@ -89,13 +91,12 @@ function normalizeBody(content) {
 const sourceArg = readArgument("--source");
 const slug = readArgument("--slug");
 const description = readArgument("--description");
-const legacyUrl = readArgument("--legacy-url");
 const shouldWrite = hasFlag("--write");
 const shouldForce = hasFlag("--force");
 
 if (!sourceArg || !slug) {
   throw new Error(
-    "Usage: npm run migrate:post -- --source <file> --slug <slug> [--description <text>] [--legacy-url <url>] [--write]",
+    "Usage: npm run migrate:post -- --source <file> --slug <slug> [--description <text>] [--write]",
   );
 }
 
@@ -111,7 +112,11 @@ const categories = normalizeList(
   parsed.data.categories ?? parsed.data.category,
 );
 const tags = normalizeList(parsed.data.tags);
-const publishedAt = normalizeDate(rawSource, parsed.data.date);
+const publishedAt = normalizeDate(rawSource, "date", parsed.data.date);
+const updatedAt =
+  parsed.data.updated === undefined
+    ? publishedAt
+    : normalizeDate(rawSource, "updated", parsed.data.updated);
 const body = normalizeBody(parsed.content);
 
 if (!title) {
@@ -136,10 +141,10 @@ const frontmatter = [
   `title: ${quote(title)}`,
   `slug: ${quote(slug)}`,
   `date: ${quote(publishedAt)}`,
+  `updated: ${quote(updatedAt)}`,
   `description: ${quote(resolvedDescription)}`,
   renderList("categories", categories),
   renderList("tags", tags),
-  ...(legacyUrl ? [`legacyUrl: ${quote(legacyUrl)}`] : []),
   "draft: false",
   "---",
   "",
@@ -158,9 +163,9 @@ const summary = {
   title,
   slug,
   publishedAt,
+  updatedAt,
   categories,
   tags,
-  legacyUrl: legacyUrl ?? null,
   bodyCharacters: body.length,
   mode: shouldWrite ? "write" : "dry-run",
 };

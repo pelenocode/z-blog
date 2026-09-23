@@ -2,12 +2,12 @@
 title: "技术手记｜改createUser存在性校验挡不住并发重复注册怎么改？"
 slug: "concurrent-user-registration"
 date: "2026-02-06T21:34:07+08:00"
+updated: "2026-02-06T21:34:07+08:00"
 description: "为什么先查再插挡不住并发重复注册，以及如何用数据库唯一索引和异常处理完成最终兜底。"
 categories:
   - "技术手记"
 tags:
   - "Java"
-legacyUrl: "https://sajlle.github.io/2026/02/06/技术手记｜改createUser存在性校验挡不住并发重复注册怎么改？/"
 draft: false
 ---
 改之前的流程：

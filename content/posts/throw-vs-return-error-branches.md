@@ -2,13 +2,13 @@
 title: "为啥遇到错误分支不直接return，而是throw？"
 slug: "throw-vs-return-error-branches"
 date: "2025-12-14T21:31:27+08:00"
+updated: "2025-12-14T21:31:27+08:00"
 description: "分析业务错误分支中直接 return 与抛异常的差异，以及它们对事务回滚、调用链和统一异常处理的影响。"
 categories:
   - "技术手记"
 tags:
   - "bugFix"
   - "Java踩坑日常"
-legacyUrl: "https://sajlle.github.io/2025/12/14/为啥遇到错误分支不直接return，而是throw？/"
 draft: false
 ---
 最近写项目，有点纠结，接口里走不通的分支，到底是return一个Result返回错误码，还是throw错误码回去？

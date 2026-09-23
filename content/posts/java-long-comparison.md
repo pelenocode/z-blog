@@ -2,6 +2,7 @@
 title: "今日踩到Java老坑，Long比较报错"
 slug: "java-long-comparison"
 date: "2025-12-14T21:12:39+08:00"
+updated: "2025-12-14T21:12:39+08:00"
 description: "复盘 Java Long 使用 != 比较造成的身份校验错误，解释缓存区间、拆箱与 Objects.equals 的正确用法。"
 categories:
   - "技术手记"
@@ -9,7 +10,6 @@ tags:
   - "Java"
   - "BugFix"
   - "踩坑日常"
-legacyUrl: "https://sajlle.github.io/2025/12/14/今日踩到Java老坑，Long比较报错/"
 draft: false
 ---
 # 前情提要

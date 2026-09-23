@@ -2,12 +2,12 @@
 title: "日常记录｜Agent V0联调的事故复盘～"
 slug: "agent-v0-integration-review"
 date: "2026-09-11T15:50:58+08:00"
+updated: "2026-09-11T15:50:58+08:00"
 description: "复盘 Agent V0 真实联调中确定性诊断、allowedActions、时间线完整性和解释字段边界的验证结果。"
 categories:
   - "日常记录"
 tags:
   - "Agent"
-legacyUrl: "https://sajlle.github.io/2026/09/11/日常记录｜Agent真实联调通过，有几个需要打磨的地方～/"
 draft: false
 ---
 昨儿联调测试了两个case，一个正常case，一个异常case。

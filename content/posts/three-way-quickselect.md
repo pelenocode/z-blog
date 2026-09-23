@@ -2,12 +2,12 @@
 title: "算法｜今天上午写215题三路QuickSelect，一点总结"
 slug: "three-way-quickselect"
 date: "2026-09-20T11:26:07+08:00"
+updated: "2026-09-20T11:26:07+08:00"
 description: "从循环不变量、未知区收缩和 pivot 取值出发，梳理三路 QuickSelect 的双向写法、边界条件与常见错误。"
 categories:
   - "算法"
 tags:
   - "Quick Select"
-legacyUrl: "https://sajlle.github.io/2026/09/20/算法｜今天上午写三路QuickSelect，一点总结/"
 draft: false
 ---
 基本思路就是把数组划分为四个区间：

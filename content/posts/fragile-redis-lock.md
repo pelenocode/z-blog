@@ -2,6 +2,7 @@
 title: "如何写一个纸糊的锁？"
 slug: "fragile-redis-lock"
 date: "2026-01-05T16:22:02+08:00"
+updated: "2026-01-05T16:22:02+08:00"
 description: "用一个典型误删锁案例说明 Redis 分布式锁为何需要所有权校验、原子释放和合理的过期策略。"
 categories:
   - "技术手记"
@@ -9,7 +10,6 @@ tags:
   - "锁"
   - "Redis"
   - "Java"
-legacyUrl: "https://sajlle.github.io/2026/01/05/如何写一个纸糊的锁？/"
 draft: false
 ---
 # `unlock()`无条件delete——会误删别人的锁

@@ -2,6 +2,7 @@
 title: "技术手记｜AI会抢哪些人的饭碗？哪些技能在AI时代越来越稀缺？"
 slug: "ai-jobs-and-verification-skills"
 date: "2026-03-01T13:44:56+08:00"
+updated: "2026-03-01T13:44:56+08:00"
 description: "从验证带宽与可测量性出发，分析 AI 自动化会替代哪些工作，以及可追溯、可验证和承担责任的能力为何更稀缺。"
 categories:
   - "技术手记"
@@ -9,7 +10,6 @@ tags:
   - "AI"
   - "经济"
   - "AGI"
-legacyUrl: "https://sajlle.github.io/2026/03/01/技术手记｜AI会抢哪些人的饭碗？哪些技能在AI时代越来越稀缺？/"
 draft: false
 ---
 这也是2月26日看论文的总结。当天我是5点睡觉，然后中午起来，傍晚18点吃完饭之后，我到三叔家看论文。

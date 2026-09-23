@@ -2,6 +2,7 @@
 title: "日常记录｜用AI学不懂的技术点，跟真人相比，区别是？"
 slug: "learning-technology-with-ai"
 date: "2026-03-12T14:11:04+08:00"
+updated: "2026-03-12T14:11:04+08:00"
 description: "从 RabbitMQ 最小 demo 的学习过程出发，比较 AI 与真人教学在即时追问、概念压缩和理解验证上的差异。"
 categories:
   - "日常记录"
@@ -9,7 +10,6 @@ categories:
 tags:
   - "学习"
   - "随笔"
-legacyUrl: "https://sajlle.github.io/2026/03/12/日常记录｜用AI设计项目之后，我感觉越来越疲惫～/"
 draft: false
 ---
 最近我找GPT给我讲MQ的用法，我其实培训班的时候，一直没弄明白怎么写一个最小demo。

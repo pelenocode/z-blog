@@ -2,13 +2,13 @@
 title: "技术手记｜风控踩坑，链路断层"
 slug: "risk-control-chain-gap"
 date: "2026-02-13T14:29:32+08:00"
+updated: "2026-02-13T14:29:32+08:00"
 description: "从短信频控只在验证码错误时计数的缺口出发，拆解风控链路断层、正确计数位置与主流程设计。"
 categories:
   - "技术手记"
 tags:
   - "风控"
   - "频控"
-legacyUrl: "https://sajlle.github.io/2026/02/13/技术手记｜风控踩坑，链路断层/"
 draft: false
 ---
 最近登录模块风控链路写完测试，发现新毛病，频控只在code错误时才计数）。

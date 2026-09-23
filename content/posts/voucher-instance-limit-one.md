@@ -2,13 +2,13 @@
 title: "BugFix｜AgentV0Bug：voucherInstance被LIMIT 1静默截断"
 slug: "voucher-instance-limit-one"
 date: "2026-09-13T17:31:21+08:00"
+updated: "2026-09-13T17:31:21+08:00"
 description: "分析业务 Mapper 的 LIMIT 1 如何静默掩盖一对多异常，并让事实层越权替诊断层做选择。"
 categories:
   - "BugFix"
 tags:
   - "Agent"
   - "DB"
-legacyUrl: "https://sajlle.github.io/2026/09/13/BugFix｜AgentV0Bug：voucherInstance被LIMIT-1静默截断/"
 draft: false
 ---
 项目事实层复用了 voucherInstanceMapper.getByOrderId，但是DB里，order_id只有普通索引，没有UNIQUE，理论上可能出现order1对应instanceA和instanceB。

@@ -2,10 +2,10 @@
 title: "日常记录｜聊一下关于Agent套壳V0感受～"
 slug: "deterministic-agent-architecture"
 date: "2026-09-12T18:06:50+08:00"
+updated: "2026-09-12T18:06:50+08:00"
 description: "总结 Agent V0 的分层设计：事实层、确定性诊断与权限边界负责正确性，LLM 只承担最后一公里解释。"
 categories: []
 tags: []
-legacyUrl: "https://sajlle.github.io/2026/09/12/技术手记｜聊一下关于Agent套壳V0感受～/"
 draft: false
 ---
 几个感受～

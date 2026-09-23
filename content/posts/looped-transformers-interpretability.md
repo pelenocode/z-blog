@@ -2,6 +2,7 @@
 title: "论文阅读｜当思考开始藏进隐藏层：Looped Transformers与可解释性的倒退"
 slug: "looped-transformers-interpretability"
 date: "2026-04-22T18:42:10+08:00"
+updated: "2026-04-22T18:42:10+08:00"
 description: "围绕 Looped Transformers 与 latent thoughts，讨论隐藏状态内部迭代带来的推理能力、组合泛化与可解释性风险。"
 categories:
   - "论文阅读"
@@ -10,7 +11,6 @@ tags:
   - "可解释性"
   - "深度学习"
   - "模型架构"
-legacyUrl: "https://sajlle.github.io/2026/04/22/论文阅读｜当思考开始藏进隐藏蹭：Looped-Transformers与可解释性的倒退/"
 draft: false
 ---
 这篇文章讨论一条正在升温的大模型研究路线：
